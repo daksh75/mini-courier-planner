@@ -1,0 +1,102 @@
+{
+    "vehicle_capacity": 15,
+    "depot": "Depot",
+    "parcels": [
+        {
+            "id": "P1",
+            "destination": "A",
+            "weight": 4,
+            "value": 70,
+            "priority": 5,
+            "deadline": 2
+        },
+        {
+            "id": "P2",
+            "destination": "B",
+            "weight": 6,
+            "value": 90,
+            "priority": 4,
+            "deadline": 1
+        },
+        {
+            "id": "P3",
+            "destination": "C",
+            "weight": 5,
+            "value": 60,
+            "priority": 3,
+            "deadline": 3
+        },
+        {
+            "id": "P4",
+            "destination": "D",
+            "weight": 3,
+            "value": 50,
+            "priority": 5,
+            "deadline": 4
+        },
+        {
+            "id": "P5",
+            "destination": "A",
+            "weight": 7,
+            "value": 100,
+            "priority": 2,
+            "deadline": 5
+        },
+        {
+            "id": "P6",
+            "destination": "C",
+            "weight": 2,
+            "value": 35,
+            "priority": 4,
+            "deadline": 2
+        },
+        {
+            "id": "P7",
+            "destination": "B",
+            "weight": 8,
+            "value": 110,
+            "priority": 3,
+            "deadline": 6
+        },
+        {
+            "id": "P8",
+            "destination": "D",
+            "weight": 4,
+            "value": 55,
+            "priority": 1,
+            "deadline": 7
+        }
+    ],
+    "graph": {
+        "Depot": {
+            "A": 4,
+            "B": 6,
+            "C": 9,
+            "D": 7
+        },
+        "A": {
+            "Depot": 4,
+            "B": 3,
+            "C": 5,
+            "D": 8
+        },
+        "B": {
+            "Depot": 6,
+            "A": 3,
+            "C": 2,
+            "D": 4
+        },
+        "C": {
+            "Depot": 9,
+            "A": 5,
+            "B": 2,
+            "D": 3
+        },
+        "D": {
+            "Depot": 7,
+            "A": 8,
+            "B": 4,
+            "C": 3
+        }
+    }
+}
